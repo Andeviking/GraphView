@@ -273,8 +273,6 @@ void MyCanvas::Init(){
     traverseLayout->addWidget(startBfs);
     textButton *startDfs = new textButton("DFS", vexInfoPage);
     traverseLayout->addWidget(startDfs);
-
-    /*zx add*/
     textButton* startKruscal = nullptr;
     textButton* startPrim = nullptr;
     traverseBar1 = new QWidget(vexInfoPage);
@@ -289,7 +287,6 @@ void MyCanvas::Init(){
     vexInfoLayout->addWidget(traverseBar1);
 
     traverseBar1->setVisible(type==UDG);
-    /*add end*/
 
     vexInfoLayout->addWidget(traverseBar);
     textButton *startDij = new textButton("Start Dijkstra", vexInfoPage);
@@ -401,7 +398,6 @@ void MyCanvas::Init(){
         arcNumText->setValue(QString::asprintf("%d",view->arcNum));
     });
 
-    /*zx add*/
     connect(startPrim, &textButton::clicked, this, [=]() {
         viewLog* newLog = new viewLog("[Prim] | --- Prim start ---");
         newLog->setStyleSheet("color:#0078d4");
@@ -428,7 +424,6 @@ void MyCanvas::Init(){
         view->hasVisitedItem = true;
         
     });
-    /*add end*/
 
     connect(startBfs, &textButton::clicked, this, [=](){
         viewLog *newLog = new viewLog("[BFS] | --- BFS start ---");

@@ -51,7 +51,6 @@ public:
     virtual void ClearVisit() = 0;
     virtual void ResetDistance() = 0;
 
-    /*zx add*/
 
     virtual void Prim(int strtID) = 0;
     virtual void Prim(MyGraphicsVexItem* strtVex) = 0;
@@ -59,7 +58,6 @@ public:
     virtual void Kruscal() = 0;
     virtual void printPath(int strtID) = 0;
     virtual void printPath(MyGraphicsVexItem* strtVex) = 0;
-    /*add end*/
 
     virtual void DFS(int strtID, bool generateForest = false) = 0;
     virtual void DFS(MyGraphicsVexItem *strtVex, bool generateForest = false) = 0;
@@ -139,14 +137,12 @@ public:
     void ClearVisit();
     void ResetDistance();
 
-    /*zx add*/
     void Prim(int strtID);
     void Prim(MyGraphicsVexItem* strtVex) { Prim(GetIdOf(strtVex)); }
 
     void Kruscal();
     void printPath(int strtID);
     void printPath(MyGraphicsVexItem* strtVex) { printPath(GetIdOf(strtVex)); }
-    /*add end*/
 
     void DFS(int strtID, bool generateForest = false);
     void DFS(MyGraphicsVexItem *strtVex, bool generateForest = false){DFS(GetIdOf(strtVex), generateForest);}
@@ -224,14 +220,12 @@ public:
     void ClearVisit();
     void ResetDistance();
 
-    /*zx add*/
     void Prim(int strtID);
     void Prim(MyGraphicsVexItem* strtVex) { Prim(GetIdOf(strtVex)); }
 
     void Kruscal();
     void printPath(int strtID);
     void printPath(MyGraphicsVexItem* strtVex) { printPath(GetIdOf(strtVex)); }
-    /*add end*/
 
     void DFS(int strtID, bool generateForest = false);
     void DFS(MyGraphicsVexItem *strtVex, bool generateForest = false){DFS(GetIdOf(strtVex), generateForest);}

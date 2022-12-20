@@ -230,8 +230,6 @@ void ALGraph::ResetDistance(){
     }
 }
 
-/*zx add*/
-
 void ALGraph::Prim(int strtID) {
     //Clear previous result
     ClearVisit();
@@ -363,7 +361,6 @@ void ALGraph::printPath(int strtID)
     return;
 }
 
-/*add end*/
 
 
 void ALGraph::DFS(int strtID, bool generateForest){
@@ -989,7 +986,6 @@ void AMLGraph::ResetDistance(){
         }
 }
 
-/*zx add*/
 void AMLGraph::Prim(int strtID) {
     //Clear previous result
     ClearVisit();
@@ -1112,8 +1108,6 @@ void AMLGraph::printPath(int strtID)
     }
     return;
 }
-
-/*add end*/
 
 
 void AMLGraph::DFS(int strtID, bool generateForest){

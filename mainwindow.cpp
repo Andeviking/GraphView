@@ -83,7 +83,7 @@ void MainWindow::Init(){
     lic->setValue("MIT License");
     lic->setEnabled(false);
     textInputItem *GitHub = new textInputItem("git", defaultSettingsPage);
-    GitHub->setValue("github.com/Linloir");
+    GitHub->setValue("github.com/Andeviking/GraphView");
     GitHub->setEnabled(false);
     defaultSettingsPage->AddContent(GitHub);
     defaultSettingsPage->AddContent(lic);
